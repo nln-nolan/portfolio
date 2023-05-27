@@ -285,7 +285,7 @@ section img#mountains_front {
   /* color of the scroll thumb */
   border-radius: 20px;
   /* roundness of the scroll thumb */
-  border: 2px solid #545454;
+  border: 3px solid #545454;
   /* creates padding around scroll thumb */
 }
 
@@ -313,7 +313,7 @@ section img#mountains_front {
 
 .projects img {
   border-radius: 8px;
-  height: 225.34px;
+  height: 225px;
   width: 450px;
 }
 
@@ -345,10 +345,20 @@ section img#mountains_front {
   width: var(--width-img-projects);
 }
 
-/* ------------------ToolApp------------------ */
-/* .tool-app {} */
+/* ------------------ToolApp-site------------------ */
+.toolapp-site img {
+  border-radius: 10px;
+  width: var(--width-img-projects);
+}
 
-.tool-app img {
+/* ------------------ToolApp-logiciel------------------ */
+.toolapp-logiciel img {
+  border-radius: 10px;
+  width: var(--width-img-projects);
+}
+
+/* ------------------Voice Message------------------ */
+.voice-message img {
   border-radius: 10px;
   width: var(--width-img-projects);
 }
