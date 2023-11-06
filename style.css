@@ -273,18 +273,19 @@ section{
     }
 
 
-/* Page My Project */
+/* Page My Project  */
 .my-project{
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(245.59deg, #3845af 0%, #232f89 28.53%, #12194d 75.52%);
-    position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 40px;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #3845af 0%, #232f89 28.53%, #12194d 75.52%);
 }
+
     .my-project-title h1{
         font-size: 70px;
         line-height: 1;
@@ -301,52 +302,18 @@ section{
             color: #0077ff;
         }
 
-    .scroller{
-        width: 100%;
-        height: 800px;
-        overflow: auto;
-        cursor: var(--custom-cursor-pointer);
-    }
-        .scroller::-webkit-scrollbar{
-            width: 10px;
-            background-color: #131313;
-            border-radius: 8px;
-        }
-            .scroller::-webkit-scrollbar-thumb{
-                border-radius: 8px;
-                background-color: #187ED7;	
-                background-image: -webkit-linear-gradient(45deg,
-                    rgba(255, 255, 255, .4) 25%,
-                    transparent 25%,
-                    transparent 50%,
-                    rgba(255, 255, 255, .4) 50%,
-                    rgba(255, 255, 255, .4) 75%,
-                    transparent 75%,
-                    transparent)
-            }
-
-    .project{
+    .carrousel{
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
-        gap: 70px;
-        padding-bottom: 10px;
-        cursor: var(--custom-cursor-default-blue);
     }
-        .project h1{
+        .carrousel h1{
             display: flex;
             color: white;
             justify-content: center;
             font-size: 40px;
             margin-bottom: 20px;
         }
-        .project img{
-            width: 600px;
-            height: 300px;
-            border-radius: 6px;
-        }
-        .project a{
+        .carrousel a{
             margin-top: 10px;
             padding: 7px 0px 7px 0px;
             display: flex;
@@ -362,9 +329,44 @@ section{
             box-shadow: 0 0 40px 40px #187ED7 inset, 0 0 0 0 #187ED7;
             transition: all 200ms ease-in-out;
         }
-            .project a:hover{
+            .carrousel a:hover{
                 font-size: 25px;
                 box-shadow: 0 0 5px 0 #187ED7 inset, 0 0 10px 4px #187ED7;
+            }
+        .carrousel-item-img{
+            width: 800px;
+            height: 420px;
+            border: solid 2px #fff;
+            border-radius: 7px;
+            margin: 15px 0px 15px 0px;
+        }
+        .carrousel-item h1{
+            color: #fff;
+        }
+        /* bouton gauche du carrousel */
+        #carrousel-bouton-gauche{
+            visibility: hidden;
+        }
+        /* bouton droit du carrousel */
+        #carrousel-bouton-droite{
+            visibility: visible;
+        }
+        #carrousel-bouton-gauche,
+        #carrousel-bouton-droite{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 120px;
+            cursor: var(--custom-cursor-pointer);
+            color: #fff;
+        } 
+            #carrousel-bouton-gauche i,
+            #carrousel-bouton-droite i{
+                transition: all 0.50s;
+            }
+            #carrousel-bouton-gauche i:hover,
+            #carrousel-bouton-droite i:hover{
+                text-shadow: 0px 0px 20px #ffffff;
             }
 
             
