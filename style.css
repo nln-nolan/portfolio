@@ -310,7 +310,7 @@ section{
             display: flex;
             color: white;
             justify-content: center;
-            font-size: 40px;
+            font-size: 45px;
             margin-bottom: 20px;
         }
         .carrousel a{
@@ -532,6 +532,17 @@ footer{
         font-size: 60px;
         transition: all 0.50s;
     }
+    .carrousel-item-img{
+        width: 600px;
+        height: 310px;
+        transition: all 0.50s;
+    }
+    #carrousel-bouton-gauche,
+    #carrousel-bouton-droite{
+        font-size: 100px;
+        transition: all 0.50s;
+    }
+
     /* Page Contact */
     .contact-title h1{
         font-size: 60px;
@@ -579,27 +590,48 @@ footer{
         transition: all 0.50s;
     }
     /* Page My Project */
-    .project img{
-        width: 400px;
-        height: 200px;
+    .carrousel-item h1{
+        font-size: 30px;
+    }
+    .carrousel a{
+        font-size: 20px;
+    }
+    .carrousel-item-img{
+        width: 450px;
+        height: 240px;
         transition: all 0.50s;
     }
-    .project a{
-        font-size: 20px;
+    #carrousel-bouton-gauche,
+    #carrousel-bouton-droite{
+        font-size: 80px;
         transition: all 0.50s;
     }
 }
 
 @media (max-width: 760px){
-    /* Page My Project */
-    .project img{
-        width: 300px;
-        height: 150px;
+    /* Page Home */
+    .home-title h1{
+        font-size: 45px;
         transition: all 0.50s;
     }
-    .project h1{
+    /* Page My Project */
+    .carrousel h1{
         font-size: 30px;
     }
+    .carrousel a{
+        font-size: 20px;
+    }
+    .carrousel-item-img{
+        width: 400px;
+        height: 215px;
+        transition: all 0.50s;
+    }
+    #carrousel-bouton-gauche,
+    #carrousel-bouton-droite{
+        font-size: 60px;
+        transition: all 0.50s;
+    }
+
     /* Page Contact */
     .contact-text{
         display: flex;
@@ -610,7 +642,7 @@ footer{
     }
 }
 
-@media (max-width: 520px){
+@media (max-width: 530px){
     /* Page Home */
     .home-title h1{
         font-size: 35px;
@@ -631,16 +663,20 @@ footer{
         font-size: 35px;
         transition: all 0.50s;
     }
-    .project h1{
-        display: flex;
-        color: white;
-        justify-content: center;
+    .carrousel h1{
+        font-size: 30px;
+    }
+    .carrousel a{
         font-size: 20px;
+    }
+    .carrousel-item-img{
+        width: 250px;
+        height: 130px;
         transition: all 0.50s;
     }
-    .project img{
-        width: 200px;
-        height: 100px;
+    #carrousel-bouton-gauche,
+    #carrousel-bouton-droite{
+        font-size: 40px;
         transition: all 0.50s;
     }
     /* Page Contact */
@@ -648,21 +684,38 @@ footer{
         font-size: 35px;
         transition: all 0.50s;
     }
+
+    /* Footer */
+    .footer-text h1{
+        font-size: 14px;
+        transition: all 0.50s;
+    }
 }
 
 @media (max-width: 360px){
+    /* Page Home */
+    .home-title h1{
+        font-size: 28px;
+        transition: all 0.50s;
+    }
+    .home .text-hello{
+        font-size: 15px;
+    }
     /* Page My Project */
-    .project h1{
+    .carrousel h1{
+        font-size: 20px;
+    }
+    .carrousel a{
         font-size: 15px;
+    }
+    .carrousel-item-img{
+        width: 150px;
+        height: 90px;
         transition: all 0.50s;
     }
-    .project img{
-        width: 140px;
-        height: 80px;
-        transition: all 0.50s;
-    }
-    .project a{
-        font-size: 15px;
+    #carrousel-bouton-gauche,
+    #carrousel-bouton-droite{
+        font-size: 20px;
         transition: all 0.50s;
     }
     /* Page Contact */
@@ -670,9 +723,19 @@ footer{
         font-size: 15px;
         transition: all 0.50s;
     }
+    /* Footer */
+    .footer-text h1{
+        font-size: 11px;
+        transition: all 0.50s;
+    }
 }
 
-@media (max-width: 260px){
+@media (max-width: 260px){ 
+    /* Page Home */
+    .home-title h1{
+        font-size: 20px;
+        transition: all 0.50s;
+    }
     /* Page About Me */
     .about-me-title h1{
         font-size: 20px;
@@ -701,11 +764,3 @@ footer{
         font-size: 20px;
     }
 } 
-
-@media (max-width: 200px){
-    /* Header */
-    header{
-        display: flex;
-        flex-direction: column;
-    }
-}
