@@ -1,0 +1,164 @@
+/* Page Contact */
+.contact{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, var(--color-purple-primary150) 0%, var(--color-purple-primary155) 28.53%, var(--color-purple-primary165) 75.52%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+    .contact-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-title h1{
+        font-size: 70px;
+        line-height: 1;
+        color: var(--color-white);
+        margin: 10px 0 30px 0;
+        display: flex;
+    }
+    .contact-title span{
+        color: var(--color-white);
+        transition: all 0.40s;
+    }
+        .contact-title span:hover{
+            color: var(--color-pink);
+        }
+
+    .contact-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .contact-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+        .contact-icons a{
+            background-color: transparent;
+            padding: 10px 12px 10px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: var(--custom-cursor-pointer);
+            border-color: var(--color-pink-primary160);
+            box-shadow: 0 0 40px 40px var(--color-pink-primary160) inset, 0 0 0 0 var(--color-pink-primary160);
+            transition: all 200ms ease-in-out;
+        }
+            .contact-icons a:hover{
+                box-shadow: 0 0 5px 0 var(--color-pink-primary160) inset, 0 0 10px 4px var(--color-pink-primary160);
+            }
+        .contact-icons i{
+            font-size: 25px;
+            color: var(--color-white);
+        }
+
+    .contact .formulaire{
+        padding-top: 50px;
+    }
+        .contact .formulaire form {
+            border-radius: 8px;
+            padding: 30px;
+            background-color: var(--color-purple-primary145);
+        }
+        .formulaire h1::selection, .contact input[type=text]::selection, .contact input[type=email]::selection, .contact textarea::selection{
+            background-color: var(--color-pink-primary155);
+            color: var(--color-white);
+        }
+        .formulaire h1, .contact input[type=text], .contact input[type=email], .contact textarea{
+            cursor: var(--custom-cursor-text);
+        }
+        .contact .formulaire h1{
+            color: var(--color-grey-primary15);
+            width: 100%;
+            padding-bottom: 20px;
+        }
+    /* Text => Nom/Prénom + Email + Objet + Message */
+    .contact input[type=text], input[type=email], textarea{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid var(--color-grey-primary25);
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        margin-right: 0px;
+        margin-left: 0px;
+        resize: vertical;
+        outline: solid 2px var(--color-purple-primary160)
+    }
+        .contact input[type=text]::placeholder, .contact input[type=email]::placeholder, .contact textarea::placeholder{
+            color: var(--color-grey-primary81);
+        }
+        .contact input[type=text]:hover, .contact input[type=email]:hover, .contact textarea:hover{
+            outline: solid 3px var(--color-pink-primary16);
+            transition: all 0.20s;
+        }
+        .contact input[type=text]:focus-visible, .contact input[type=email]:focus-visible, .contact textarea:focus-visible{
+            outline: solid 4px var(--color-purple-primary160);
+            transition: all 0.20s;
+        }
+
+    .contact input[type=submit]{
+        background-color: transparent;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: var(--custom-cursor-pointer);
+        border-color: var(--color-pink-primary155);
+        color: var(--color-white);
+        box-shadow: 0 0 40px 40px var(--color-pink-primary155) inset, 0 0 0 0 var(--color-pink-primary155);
+        transition: all 200ms ease-in-out;
+    }
+        .contact input[type=submit]:hover{
+            border: none;
+            box-shadow: 0 0 5px 0 var(--color-pink-primary155) inset, 0 0 10px 4px var(--color-pink-primary155);
+            border-radius: 10px;
+        }
+
+
+
+/* Responsive */
+@media (max-width: 1200px){
+    .contact-title h1{
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 760px){
+    .contact-text{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 530px){
+    .contact-title h1{
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 360px){
+    .contact .formulaire h1{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 260px){
+    .contact-title h1{
+        font-size: 20px;
+    }
+    .contact input[type=submit]{
+        padding: 8px 15px;
+        font-size: 10px;
+    }
+} 

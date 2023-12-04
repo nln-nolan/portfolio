@@ -1,0 +1,257 @@
+/* Page My Project  */
+.my-project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, var(--color-blue-primary30) 0%, var(--color-blue-primary35) 28.53%, var(--color-blue-primary76) 75.52%);
+}
+    .my-project-title h1{
+        font-size: 70px;
+        line-height: 1;
+        color: var(--color-white);
+        margin: 10px 0 30px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .my-project-title span{
+        color: var(--color-white);
+        transition: all 0.40s;
+    }
+        .my-project-title span:hover{
+            color: var(--color-blue-primary36);
+        }
+
+    .carrousel{
+        display: flex;
+        justify-content: center;
+    }
+        .languages{
+            outline: solid 2px var(--color-grey-primary65);
+            border-radius: 100%;
+            transition: 0.20s;
+            width: 48px;
+            margin-top: 10px;
+        }
+        .languages:hover{
+            outline: solid 3px var(--color-grey-primary15);
+            box-shadow: 0px 0px 15px 0px var(--color-white);
+        }
+        .carrousel h1{
+            display: flex;
+            color: var(--color-white);
+            justify-content: center;
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+        .carrousel p{
+            color: var(--color-white);
+            max-width: 800px;
+            display: flex;
+            justify-content: center;
+            font-size: 25px;
+            text-align: center;
+        }
+        .carrousel a{
+            padding: 7px 0px 7px 0px;
+            display: flex;
+            justify-content: center;
+            background-color: transparent;
+            border: none;
+            cursor: var(--custom-cursor-pointer);
+            border-radius: 10px;
+            text-decoration: none;
+            color: var(--color-white);
+            font-size: 25px;
+            border-color: var(--color-blue-primary37);
+            box-shadow: 0 0 40px 40px var(--color-blue-primary37) inset, 0 0 0 0 var(--color-blue-primary37);
+            transition: all 200ms ease-in-out;
+        }
+            .carrousel a:hover{
+                font-size: 25px;
+                box-shadow: 0 0 5px 0 var(--color-blue-primary37) inset, 0 0 10px 4px var(--color-blue-primary37);
+            }
+        .carrousel-item-img{
+            width: 800px;
+            height: 420px;
+            border: solid 2px var(--color-white);
+            border-radius: 7px;
+            margin: 15px 0px 15px 0px;
+        }
+        .carrousel-item h1{
+            color: var(--color-white);
+        }
+        /* bouton gauche du carrousel */
+        #carrousel-bouton-gauche{
+            visibility: hidden;
+        }
+        /* bouton droit du carrousel */
+        #carrousel-bouton-droite{
+            visibility: visible;
+        }
+        #carrousel-bouton-gauche,
+        #carrousel-bouton-droite{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 120px;
+            cursor: var(--custom-cursor-pointer);
+            color: var(--color-white);
+        } 
+            #carrousel-bouton-gauche i,
+            #carrousel-bouton-droite i{
+                transition: all 0.50s;
+            }
+            #carrousel-bouton-gauche i:hover,
+            #carrousel-bouton-droite i:hover{
+                text-shadow: 0px 0px 20px var(--color-white);
+            }
+        .numberPages{
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 20px;
+        }
+        .numberPages h1{
+            font-size: 30px;
+        }
+
+
+/* Responsive */
+@media (max-width: 1200px){
+    .my-project-title h1{
+        font-size: 60px;
+    }
+    .carrousel-item-img{
+        width: 600px;
+        height: 310px;
+    }
+    #carrousel-bouton-gauche,
+    #carrousel-bouton-droite{
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 990px){
+    .carrousel-item .languages{
+        width: 40px;
+    }
+    .carrousel-item h1{
+        font-size: 30px;
+    }
+    .carrousel-item p{
+        font-size: 20px;
+    }
+    .carrousel a{
+        font-size: 20px;
+    }
+    .carrousel-item-img{
+        width: 450px;
+        height: 240px;
+    }
+    #carrousel-bouton-gauche,
+    #carrousel-bouton-droite{
+        font-size: 80px;
+    }
+    .numberPages h1{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 760px){
+    .carrousel-item .languages{
+        width: 35px;
+    }
+    .carrousel h1{
+        font-size: 30px;
+    }
+    .carrousel a{
+        font-size: 20px;
+    }
+    .carrousel-item-img{
+        width: 400px;
+        height: 215px;
+    }
+    #carrousel-bouton-gauche,
+    #carrousel-bouton-droite{
+        font-size: 60px;
+    }
+    .numberPages h1{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 530px){
+    .my-project-title h1{
+        font-size: 35px;
+    }
+    .carrousel-item .languages{
+        width: 25px;
+    }
+    .carrousel h1{
+        font-size: 30px;
+    }
+    .carrousel a{
+        font-size: 20px;
+    }
+    .carrousel-item-img{
+        width: 250px;
+        height: 130px;
+    }
+    #carrousel-bouton-gauche,
+    #carrousel-bouton-droite{
+        font-size: 40px;
+    }
+    .numberPages h1{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 360px){
+    .carrousel h1{
+        font-size: 20px;
+    }
+    .carrousel-item .languages{
+        width: 20px;
+    }
+    .carrousel-item p{
+        font-size: 10px;
+    }
+    .carrousel a{
+        font-size: 15px;
+    }
+    .carrousel-item-img{
+        width: 150px;
+        height: 90px;
+    }
+    #carrousel-bouton-gauche,
+    #carrousel-bouton-droite{
+        font-size: 20px;
+    }
+    .numberPages h1{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 260px){
+    .my-project-title h1{
+        font-size: 20px;
+    }
+    .carrousel-item .languages{
+        width: 15px;
+    }
+    .project img{
+        width: 110px;
+        height: 60px;
+    }
+    .project a{
+        font-size: 12px;
+    }
+    .project h1{
+        font-size: 10px;
+    }
+} 

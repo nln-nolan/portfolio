@@ -1,4 +1,4 @@
-// Mode Debug : outline on / off
+// Mode Debug on / off : outline  |  all files
 function debughtml(enable) {
     const styleTag = document.getElementById('debug-mode');
     if (enable) {

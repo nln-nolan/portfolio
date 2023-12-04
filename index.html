@@ -9,9 +9,6 @@
     <!-- Favicon -->
     <link rel="icon" href="Images/Favicon/PF.png">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-
     <!-- boxicons link -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
@@ -24,10 +21,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Bar de recherche Pays dans Contact -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
-    <link rel="stylesheet" href="select2.css">
+    <link rel="stylesheet" href="CSS/Select2.css">
 
     <!-- ScrollReveal: Bibliothèque pour les animations d'apparition au défilement -->
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -92,8 +89,8 @@
         </section>
 
         <!-- Page My Project -->
-        <section class="my-project section" id="my-project">
-            <div class="my-project-title unselectable">
+        <section class="my-project section unselectable" id="my-project">
+            <div class="my-project-title">
                 <h1><span>M</span> <span>y</span> <span> </span> <span>P</span> <span>r</span> <span>o</span> <span>j</span> <span>e</span> <span>c</span> <span>t</span></h1>
             </div>
             <div class="carrousel">
@@ -102,38 +99,89 @@
                     <i class="ri-arrow-left-s-line"></i>
                 </div>
 
-                <!-- Images du carrousel -->
                 <!-- Portfolio -->
                 <div class="portfolio carrousel-item" id="carrousel-item-0">
+                    <img src="Images/Project/FR.png" alt="FR" class="languages" style="position: absolute;">
                     <h1>Portfolio</h1>
-                    <img src="Images/Project/Portfolio.png" alt="fleur violette" class="carrousel-item-img unselectable">
-                    <a href="https://github.com/nln-nolan/portfolio" class="unselectable" target="_blank">En Savoir +</a>
-                </div>
-                <!-- TicTacToe -->
-                <div class="TicTacToe carrousel-item" id="carrousel-item-1" style="display: none;">
-                    <h1 >TicTacToe</h1>
-                    <img src="Images/Project/TicTacToe.png" alt="maison" class="carrousel-item-img unselectable" width="100%">
-                    <a href="https://github.com/nln-nolan/TicTacToe" class="unselectable" target="_blank">En Savoir +</a>
-                </div>
-                <!-- ToDoList -->
-                <div class="ToDoList carrousel-item" id="carrousel-item-2" style="display: none;">
-                    <h1>ToDoList</h1>
-                    <img src="Images/Project/ToDoList.png" alt="furet" class="carrousel-item-img unselectable" width="100%">
-                    <a href="https://github.com/nln-nolan/ToDoList" class="unselectable" target="_blank">En Savoir +</a>
-                </div>
-                <!-- ToolApp -->
-                <div class="ToolApp carrousel-item" id="carrousel-item-3" style="display: none;">
-                    <h1>ToolApp</h1>
-                    <img src="Images/Project/ToolApp.png" alt="furet" class="carrousel-item-img unselectable" width="100%">
-                    <a href="https://github.com/nln-nolan/ToolApp" class="unselectable" target="_blank">En Savoir +</a>
-                </div>
-                <!-- Voice Message -->
-                <div class="Voice-Message carrousel-item" id="carrousel-item-4" style="display: none;">
-                    <h1>Voice Message</h1>
-                    <img src="Images/Project/Voice-Message.png" alt="skate" id="carrousel-item-3" class="carrousel-item-img unselectable" width="100%">
-                    <a href="https://github.com/nln-nolan/Voice-Message" class="unselectable" target="_blank">En Savoir +</a>
+                    <p>Site web : Portfolio répertorie tous mes projets.</p>
+                    <div>
+                        <img src="Images/Project/Portfolio.png" alt="Portfolio" class="carrousel-item-img">
+                    </div>
+                    <a href="https://github.com/nln-nolan/portfolio" target="_blank">En Savoir +</a>
+                    <div class="numberPages">
+                        <h1 class="numberPage"></h1>
+                    </div>
                 </div>
 
+                <!-- TicTacToe -->
+                <div class="TicTacToe carrousel-item" id="carrousel-item-1" style="display: none;">
+                    <img src="Images/Project/EN.png" alt="EN" class="languages" style="position: absolute;">
+                    <h1>TicTacToe</h1>
+                    <p>Site web : TicTacToe contient deux jeux, un Morpion et un Blackjack, codés pendant un stage chez Ubisoft.</p>
+                    <div>
+                        <img src="Images/Project/TicTacToe.png" alt="TicTacToe" class="carrousel-item-img" width="100%">
+                    </div>
+                    <a href="https://github.com/nln-nolan/TicTacToe" target="_blank">En Savoir +</a>
+                    <div class="numberPages">
+                        <h1 class="numberPage"></h1>
+                    </div>
+                </div>
+
+                <!-- ToDoList -->
+                <div class="ToDoList carrousel-item" id="carrousel-item-2" style="display: none;">
+                    <img src="Images/Project/FR.png" alt="FR" class="languages" style="position: absolute;">
+                    <h1>ToDoList</h1>
+                    <p>Site web : ToDoList est une liste où l'on peut inscrire des tâches à accomplir, codée pendant un stage chez Ubisoft.</p>
+                    <div>
+                        <img src="Images/Project/ToDoList.png" alt="ToDoList" class="carrousel-item-img" width="100%">
+                    </div>
+                    <a href="https://github.com/nln-nolan/ToDoList" target="_blank">En Savoir +</a>
+                    <div class="numberPages">
+                        <h1 class="numberPage"></h1>
+                    </div>
+                </div>
+
+                <!-- ToolApp -->
+                <div class="ToolApp carrousel-item" id="carrousel-item-3" style="display: none;">
+                    <img src="Images/Project/FR.png" alt="FR" class="languages" style="position: absolute;">
+                    <h1>ToolApp</h1>
+                    <p>Logiciel : ToolApp est un outil avec plusieurs fonctionnalités.</p>
+                    <div>
+                        <img src="Images/Project/ToolApp.png" alt="ToolApp" class="carrousel-item-img" width="100%">
+                    </div>
+                    <a href="https://github.com/nln-nolan/ToolApp" target="_blank">En Savoir +</a>
+                    <div class="numberPages">
+                        <h1 class="numberPage"></h1>
+                    </div>
+                </div>
+
+                <!-- Voice Message -->
+                <div class="Voice-Message carrousel-item" id="carrousel-item-4" style="display: none;">
+                    <img src="Images/Project/FR.png" alt="FR" class="languages" style="position: absolute;">
+                    <h1>Voice Message</h1>
+                    <p>Logiciel : Entrer un texte, et le logiciel s'occupera de le répéter verbalement.</p>
+                    <div>
+                        <img src="Images/Project/Voice-Message.png" alt="Voice Message" class="carrousel-item-img" width="100%">
+                    </div>
+                    <a href="https://github.com/nln-nolan/Voice-Message" target="_blank">En Savoir +</a>
+                    <div class="numberPages">
+                        <h1 class="numberPage"></h1>
+                    </div>
+                </div>
+
+                <!-- Compiler -->
+                <div class="Compiler carrousel-item" id="carrousel-item-5" style="display: none;">
+                    <img src="Images/Project/EN.png" alt="EN" class="languages" style="position: absolute;">
+                    <h1>Compiler</h1>
+                    <p>Logiciel : Compiler vous permet de compiler et d'exécuter tous vos programmes en C et C++.</p>
+                    <div>
+                        <img src="Images/Project/Compiler.png" alt="Compiler" class="carrousel-item-img" width="100%">
+                    </div>
+                    <a href="https://github.com/nln-nolan/Compiler" target="_blank">En Savoir +</a>
+                    <div class="numberPages">
+                        <h1 class="numberPage"></h1>
+                    </div>
+                </div>
 
                 <!-- Flèche droite du carrousel -->   
                 <div id="carrousel-bouton-droite">
@@ -453,9 +501,9 @@
 
         <!-- Footer -->
         <footer>
-        <div class="footer-text">
-            <h1>© Copyright 2023 by nln.nolan All Rights Reserved.</h1>
-        </div>
+            <div class="footer-text">
+                <h1>© Copyright 2023 by nln.nolan All Rights Reserved.</h1>
+            </div>
         </footer>
     </div>
 
@@ -467,6 +515,17 @@
     <!-- Debug Html : outline on / off -->
     <style id="debug-mode">/* * { outline: solid 2px red; } */</style>
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/Html.css">
+    <link rel="stylesheet" href="CSS/Responsive.css">
+    <link rel="stylesheet" href="CSS/Root.css">
+    <link rel="stylesheet" href="CSS/Header.css">
+    <link rel="stylesheet" href="CSS/Home.css">
+    <link rel="stylesheet" href="CSS/AboutMe.css">
+    <link rel="stylesheet" href="CSS/MyProject.css">
+    <link rel="stylesheet" href="CSS/Contact.css">
+    <link rel="stylesheet" href="CSS/Footer.css">
+
     <!-- JS -->
     <script src="JS/Script.js"></script>
     <script src="JS/Debug.js"></script>
@@ -476,6 +535,7 @@
     <script src="JS/ScrollUp.js"></script>
     <script src="JS/Forms.js"></script>
     <script src="JS/Project.js"></script>
+
 
 </body>
 </html>

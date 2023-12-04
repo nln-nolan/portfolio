@@ -1,0 +1,177 @@
+:root{
+    /* Cursors */
+    --custom-cursor-pointer: url('/Images/Cursor/Pointer-cursor.png'), pointer;
+    --custom-cursor-text: url('/Images/Cursor/Text-cursor.png'), text;
+    --custom-cursor-default-green: url('/Images/Cursor/Green-cursor.png'), default;
+    --custom-cursor-default-red: url('/Images/Cursor/Red-cursor.png'), default;
+    --custom-cursor-default-blue: url('/Images/Cursor/Blue-cursor.png'), default;
+    --custom-cursor-default-purple: url('/Images/Cursor/Purple-cursor.png'), default;
+
+    /* Colors Nuance */
+    --color-white: #fff;
+    --color-dark: #000;
+
+    /* Colors Grey */
+    --color-grey-transparency: #ddddddda;
+    --color-grey-primary10: #f0f0f0;
+    --color-grey-primary15: #e9e9e9;
+    --color-grey-primary20: #d9d9d9;
+    --color-grey-primary25: #ccc;
+    --color-grey-primary30: #bfbfbf;
+    --color-grey-primary35: #b3b3b3;
+    --color-grey-primary40: #a6a6a6;
+    --color-grey-primary45: #999999;
+    --color-grey-primary50: #8c8c8c;
+    --color-grey-primary55: #808080;
+    --color-grey-primary60: #737373;
+    --color-grey-primary65: #777777;
+    --color-grey-primary70: #595959;
+    --color-grey-primary75: #4d4d4d;
+    --color-grey-primary80: #404040;
+    --color-grey-primary81: #3d3d3d;
+    --color-grey-primary85: #353535;
+    --color-grey-primary86: #2e2e2e;
+    --color-grey-primary90: #262626;
+    --color-grey-primary95: #1a1a1a;
+    --color-grey-primary96: #131313;
+    --color-grey-primary100: #0d0d0d;
+    
+    /* Colors Green */
+    --color-green: #00ff15;
+    --color-green-transparency: #4d9559bb;
+    --color-green-primary5: #40cf1d;
+    --color-green-primary10: #9bd99b;
+    --color-green-primary15: #76d276;
+    --color-green-primary20: #51cb51;
+    --color-green-primary25: #2bc42b;
+    --color-green-primary30: #29b729;
+    --color-green-primary35: #27a827;
+    --color-green-primary36: #2ea311;
+    --color-green-primary40: #2b9934;
+    --color-green-primary41: #4d9559;
+    --color-green-primary45: #238f23;
+    --color-green-primary50: #218121;
+    --color-green-primary51: #38703d;
+    --color-green-primary55: #1f731f;
+    --color-green-primary60: #1d651d;
+    --color-green-primary65: #1b571b;
+    --color-green-primary70: #194919;
+    --color-green-primary71: #133917;
+    --color-green-primary75: #173b17;
+    --color-green-primary80: #152e15;
+    --color-green-primary85: #132213;
+    --color-green-primary90: #111511;
+
+    /* Colors Red */
+    --color-red: #ff0000;
+    --color-red-primary0: #ffe6e6;
+    --color-red-primary5: #fccccc;
+    --color-red-primary10: #f9b3b3;
+    --color-red-primary15: #f69999;
+    --color-red-primary20: #f37f7f;
+    --color-red-primary25: #f06666;
+    --color-red-primary30: #ee4d4d;
+    --color-red-primary35: #ec3333;
+    --color-red-primary40: #e91e1e;
+    --color-red-primary45: #e90000;
+    --color-red-primary50: #db0000;
+    --color-red-primary55: #cc0000;
+    --color-red-primary60: #be0000;
+    --color-red-primary65: #af0000;
+    --color-red-primary70: #a10000;
+    --color-red-primary75: #920000;
+    --color-red-primary80: #840000;
+    --color-red-primary85: #750000;
+    --color-red-primary90: #670000;
+    --color-red-primary95: #580000;
+    --color-red-primary95: #310000;
+    --color-red-primary150: #954d4d;
+    --color-red-primary155: #703838;
+    --color-red-primary160: #391313;
+
+    --color-red-primary70-selection: #a1000077;
+
+    /* Colors Blue */
+    --color-blue: #003cff;
+    --color-blue-primary0: #ccccff;
+    --color-blue-primary5: #b3b3ff;
+    --color-blue-primary10: #9999ff;
+    --color-blue-primary15: #8080ff;
+    --color-blue-primary20: #6666ff;
+    --color-blue-primary25: #4d4dff;
+    --color-blue-primary30: #3845af;
+    --color-blue-primary35: #232f89;
+    --color-blue-primary36: #0077ff;
+    --color-blue-primary37: #187ED7;
+    --color-blue-primary40: #3333ff;
+    --color-blue-primary45: #1a1aff;
+    --color-blue-primary50: #0015ff;
+    --color-blue-primary55: #0013e6;
+    --color-blue-primary60: #0011cc;
+    --color-blue-primary65: #000fa3;
+    --color-blue-primary70: #000e8a;
+    --color-blue-primary75: #000c70;
+    --color-blue-primary76: #12194d;
+    --color-blue-primary80: #000a57;
+    --color-blue-primary85: #00083d;
+    --color-blue-primary90: #000724;
+    --color-blue-primary95: #00050a;
+
+    /* Colors Purple */
+    --color-purple-primary0: #f7e7ff;
+    --color-purple-primary5: #e0ccff;
+    --color-purple-primary10: #c9b3ff;
+    --color-purple-primary15: #b39aff;
+    --color-purple-primary20: #9c80ff;
+    --color-purple-primary25: #8566ff;
+    --color-purple-primary30: #6e4cff;
+    --color-purple-primary35: #5732ff;
+    --color-purple-primary40: #4019ff;
+    --color-purple-primary45: #3300ff;
+    --color-purple-primary50: #3300ff;
+    --color-purple-primary55: #3300ff;
+    --color-purple-primary60: #3300ff;
+    --color-purple-primary65: #3300ff;
+    --color-purple-primary70: #3300ff;
+    --color-purple-primary75: #3300ff;
+    --color-purple-primary80: #3300ff;
+    --color-purple-primary85: #3300ff;
+    --color-purple-primary90: #3300ff;
+    --color-purple-primary95: #3300ff;
+    --color-purple-primary100: #3300ff;
+    --color-purple-primary145: #792e97;
+    --color-purple-primary156: #854ec4;
+    --color-purple-primary150: #6f38af;
+    --color-purple-primary155: #532389;
+    --color-purple-primary160: #54105d;
+    --color-purple-primary165: #32124d;
+
+    /* Colors Pink */
+    --color-pink: #ea00ff;
+    --color-pink-primary0: #ffe6f2;
+    --color-pink-primary5: #fcb3d9;
+    --color-pink-primary10: #f999cc;
+    --color-pink-primary15: #f27fbb;
+    --color-pink-primary20: #e666aa;
+    --color-pink-primary25: #df4d99;
+    --color-pink-primary30: #d63388;
+    --color-pink-primary35: #cf1a77;
+    --color-pink-primary40: #c90066;
+    --color-pink-primary45: #b80059;
+    --color-pink-primary50: #a6004d;
+    --color-pink-primary55: #940046;
+    --color-pink-primary60: #82003f;
+    --color-pink-primary65: #700038;
+    --color-pink-primary70: #5e002b;
+    --color-pink-primary75: #4d0024;
+    --color-pink-primary80: #3b001d;
+    --color-pink-primary85: #290016;
+    --color-pink-primary90: #18000f;
+    --color-pink-primary95: #060008;
+    --color-pink-primary100: #000000;
+    --color-pink-primary150: #eb54ff;
+    --color-pink-primary155: #c420d9;
+    --color-pink-primary160: #9112a2;
+
+    --color-red-primary155-selection: #c320d977;
+}

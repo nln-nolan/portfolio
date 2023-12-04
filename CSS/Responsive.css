@@ -1,0 +1,281 @@
+/* Responsive */
+@media (max-width: 1200px){
+    section.home{
+        padding: 0 3%;
+    }
+    /* Page About Me */
+    .about-me-title h1{
+        font-size: 60px;
+    }
+    .about-me-text p{
+        font-size: 20px;
+    }
+    .about-me-img img{
+        width: 80%;
+        height: 80%;
+    }
+    /* Page My Project */
+    .my-project-title h1{
+        font-size: 60px;
+    }
+    .carrousel-item-img{
+        width: 600px;
+        height: 310px;
+    }
+    #carrousel-bouton-gauche,
+    #carrousel-bouton-droite{
+        font-size: 100px;
+    }
+
+    /* Page Contact */
+    .contact-title h1{
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 990px){
+    /* Page Header */
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: -300%;
+        width: 300px;
+        height: 280px;
+        background: var(--color-green-transparency);;
+        padding: 25px 20px;
+    }
+    .navlist a{
+        margin-left: 0;
+        display: block;
+        margin: 10px 0;
+    }
+    .navlist.open{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        right: 0;
+        border-radius: 10px;
+    }
+    /* Page Home */
+    .iconsForPC{
+        display: none;
+    }
+    .iconsForMobile{
+        display: flex;
+    }
+    /* Page My Project */
+    .carrousel-item .languages{
+        width: 40px;
+    }
+    .carrousel-item h1{
+        font-size: 30px;
+    }
+    .carrousel-item p{
+        font-size: 20px;
+    }
+    .carrousel a{
+        font-size: 20px;
+    }
+    .carrousel-item-img{
+        width: 450px;
+        height: 240px;
+    }
+    #carrousel-bouton-gauche,
+    #carrousel-bouton-droite{
+        font-size: 80px;
+    }
+    .numberPages h1{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 760px){
+    /* Page Home */
+    .home-title h1{
+        font-size: 45px;
+    }
+    /* Page My Project */
+    .carrousel-item .languages{
+        width: 35px;
+    }
+    .carrousel h1{
+        font-size: 30px;
+    }
+    .carrousel a{
+        font-size: 20px;
+    }
+    .carrousel-item-img{
+        width: 400px;
+        height: 215px;
+    }
+    #carrousel-bouton-gauche,
+    #carrousel-bouton-droite{
+        font-size: 60px;
+    }
+    .numberPages h1{
+        font-size: 20px;
+    }
+
+    /* Page Contact */
+    .contact-text{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 530px){
+    /* Page Home */
+    .home-title h1{
+        font-size: 35px;
+    }
+    /* Page About Me */
+    .about-me-title h1{
+        font-size: 35px;
+    }
+    .about-me-text p{
+        font-size: 15px;
+    }
+    .about-me-img img{
+        width: 90%;
+        height: 90%;
+    }
+    /* Page My Project */
+    .my-project-title h1{
+        font-size: 35px;
+    }
+    .carrousel-item .languages{
+        width: 25px;
+    }
+    .carrousel h1{
+        font-size: 30px;
+    }
+    .carrousel a{
+        font-size: 20px;
+    }
+    .carrousel-item-img{
+        width: 250px;
+        height: 130px;
+    }
+    #carrousel-bouton-gauche,
+    #carrousel-bouton-droite{
+        font-size: 40px;
+    }
+    .numberPages h1{
+        font-size: 15px;
+    }
+
+    /* Page Contact */
+    .contact-title h1{
+        font-size: 35px;
+    }
+
+    /* Footer */
+    .footer-text h1{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 360px){
+    /* Page Home */
+    .home-title h1{
+        font-size: 28px;
+    }
+    .home .text-hello{
+        font-size: 15px;
+    }
+    /* Page My Project */
+    .carrousel h1{
+        font-size: 20px;
+    }
+    .carrousel-item .languages{
+        width: 20px;
+    }
+    .carrousel-item p{
+        font-size: 10px;
+    }
+    .carrousel a{
+        font-size: 15px;
+    }
+    .carrousel-item-img{
+        width: 150px;
+        height: 90px;
+    }
+    #carrousel-bouton-gauche,
+    #carrousel-bouton-droite{
+        font-size: 20px;
+    }
+    .numberPages h1{
+        font-size: 15px;
+    }
+
+    /* Page Contact */
+    .contact .formulaire h1{
+        font-size: 15px;
+    }
+    /* Footer */
+    .footer-text h1{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 300px){
+    /* Page Header */
+    .navlist{
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: -300%;
+        width: 230px;
+        height: 270px;
+        background: var(--color-green-transparency);
+        padding: 25px 20px;
+    }
+    .navlist a{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 260px){
+    /* Page Home */
+    .home-title h1{
+        font-size: 20px;
+    }
+    /* Page About Me */
+    .about-me-title h1{
+        font-size: 20px;
+    }
+    .about-me-text p{
+        font-size: 10px;
+    }
+    /* Page My Project */
+    .my-project-title h1{
+        font-size: 20px;
+    }
+    .carrousel-item .languages{
+        width: 15px;
+    }
+    .project img{
+        width: 110px;
+        height: 60px;
+    }
+    .project a{
+        font-size: 12px;
+    }
+    .project h1{
+        font-size: 10px;
+    }
+    /* Page Contact */
+    .contact-title h1{
+        font-size: 20px;
+    }
+    .contact input[type=submit]{
+        padding: 8px 15px;
+        font-size: 10px;
+    }
+} 

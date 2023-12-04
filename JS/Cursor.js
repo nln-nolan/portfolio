@@ -1,3 +1,4 @@
+var tryCursor = true;
 // Custom Cursor
 window.addEventListener("scroll", function() {
     const colorChangeElementCursor = document.querySelector('.custom-cursor');
@@ -17,6 +18,8 @@ window.addEventListener("scroll", function() {
                 colorChangeElementCursor.style.cursor ='var(--custom-cursor-default-purple)';
             } else if (getComputedStyle(document.body).cursor === 'pointer') {
                 colorChangeElementCursor.style.cursor = 'var(--custom-cursor-pointer)';
+            } else if (getComputedStyle(document.body).cursor === 'text') {
+                colorChangeElementCursor.style.cursor = 'var(--custom-cursor-text)';
             }
           }
         });

@@ -1,4 +1,8 @@
-// pour ajouter d'autre image il suffi de changer les haute valeur exemple for (let i = 0; i < 5; i++) en -> for (let i = 0; i < 6; i++) et if (elementValue === 4) en -> if (elementValue === 5)
+// +------- Ajouter / Supprimer des Project -------+
+// Ajouter + 1 par projet au valeur si dessous
+// Diminuer - 1 par projet au valeur si dessous
+const add1 = 6   // + 1 / - 1
+const add2 = 5   // + 1 / - 1
 
 const carrouselBoutonGauche = document.getElementById("carrousel-bouton-gauche");
 const carrouselBoutonDroite = document.getElementById("carrousel-bouton-droite");
@@ -8,18 +12,18 @@ let elementValue = 0;
 
 // Gestionnaire d'événement pour le bouton gauche du carrousel
 carrouselBoutonGauche.addEventListener('click', function() {
-    if (elementValue > 0) { // Vérifie si l'élément actuel n'est pas le premier
+    if (elementValue > 0) {
         elementValue -= 1;
         item = "carrousel-item-" + elementValue;
         document.getElementById(item).style.display = "block";
         carrouselBoutonDroite.style.visibility = "visible";
         carrouselBoutonGauche.style.visibility = "visible";
-        if (elementValue === 0) { // Si nous sommes revenus au premier élément
+        if (elementValue === 0) {
             carrouselBoutonGauche.style.visibility = "hidden";
         }
         
-        for (let i = 0; i < 5; i++) { // Boucle pour masquer les autres éléments (0, 1, 2) // pour ajouter d'autre projet alors augementer le chiffre : < CHIFFRE; i++)
-            if (i !== elementValue) { // Si l'élément n'est pas celui que nous voulons afficher
+        for (let i = 0; i < add1; i++) {
+            if (i !== elementValue) {
                 document.getElementById("carrousel-item-" + i).style.display = "none";
             }
         }
@@ -28,20 +32,34 @@ carrouselBoutonGauche.addEventListener('click', function() {
 
 // Gestionnaire d'événement pour le bouton droit du carrousel
 carrouselBoutonDroite.addEventListener('click', function() {
-    if (elementValue < 4) { // Vérifie si l'élément actuel n'est pas le dernier // pour ajouter d'autre projet alors augementer le chiffre : (elementValue < CHIFFRE)
+    if (elementValue < add2) {
         elementValue += 1; 
         item = "carrousel-item-" + elementValue;
         document.getElementById(item).style.display = "block";
         carrouselBoutonDroite.style.visibility = "visible";
         carrouselBoutonGauche.style.visibility = "visible";
-        if (elementValue === 4) { // Si nous sommes arrivés au dernier élément // pour ajouter d'autre projet alors augementer le chiffre : === CHIFFRE)
+        if (elementValue === add2) {
             carrouselBoutonDroite.style.visibility = "hidden";
         }
         
-        for (let i = 0; i < 5; i++) { // Boucle pour masquer les autres éléments (0, 1, 2) // pour ajouter d'autre projet alors augementer le chiffre : < CHIFFRE; i++)
-            if (i !== elementValue) { // Si l'élément n'est pas celui que nous voulons afficher
+        for (let i = 0; i < add1; i++) {
+            if (i !== elementValue) {
                 document.getElementById("carrousel-item-" + i).style.display = "none";
             }
         }
     }
+});
+
+// Numéro des Pages
+document.addEventListener('DOMContentLoaded', function () {
+    var numberPagesElements = document.querySelectorAll('.numberPages');
+
+    numberPagesElements.forEach(function (numberPagesElement, index) {
+        var h1NumberPage = numberPagesElement.querySelector('.numberPage');
+    
+        var numberPage = numberPagesElements.length;
+        if (h1NumberPage) {
+            h1NumberPage.textContent = (index + 1) + '/' + numberPage;
+        }
+    });
 });
