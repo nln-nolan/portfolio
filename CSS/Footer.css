@@ -1,0 +1,36 @@
+/* Footer */
+footer {
+    height: 120px;
+    background-color: var(--color-grey-primary96);
+}
+    .footerText {
+        height: 100%;
+    }
+        .footerText h1 {
+            height: 100%;
+            color: var(--color-grey-transparency);
+            font-size: 20px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.50s;
+            cursor: text;
+        }
+        .footerText h1::selection {
+            background-color: var(--color-grey-primary85);
+            color: var(--color-white);
+        }
+
+/* Responsive */
+@media (max-width: 530px) {
+    .footerText h1 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 360px) {
+    .footerText h1 {
+        font-size: 11px;
+    }
+}
