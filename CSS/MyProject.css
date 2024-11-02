@@ -1,0 +1,322 @@
+/* Page My Project  */
+.myProject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, var(--color-blue-primary30) 0%, var(--color-blue-primary35) 28.53%, var(--color-blue-primary76) 75.52%);
+}
+    .myProjectTitle h1 {
+        font-size: 70px;
+        line-height: 1;
+        color: var(--color-white);
+        margin: 10px 0 30px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .myProjectTitle span {
+        color: var(--color-white);
+        transition: all 0.40s;
+    }
+        .myProjectTitle span:hover {
+            color: var(--color-blue-primary36);
+        }
+
+    .projectCarrousel {
+        display: flex;
+        justify-content: center;
+    }
+        .languages {
+            outline: solid 2px var(--color-grey-primary65);
+            border-radius: 100%;
+            transition: 0.20s;
+            width: 48px;
+            margin-top: 10px;
+        }
+        .languages:hover {
+            outline: solid 3px var(--color-grey-primary15);
+            box-shadow: 0px 0px 15px 0px var(--color-white);
+        }
+        .projectCarrousel h1 {
+            display: flex;
+            color: var(--color-white);
+            justify-content: center;
+            font-size: 45px;
+            margin-bottom: 20px;
+            cursor: text;
+        }
+        .projectCarrousel p {
+            color: var(--color-white);
+            max-width: 800px;
+            display: flex;
+            justify-content: center;
+            font-size: 25px;
+            text-align: center;
+            cursor: text;
+        }
+        .projectCarrousel a {
+            padding: 7px 0px 7px 0px;
+            display: flex;
+            justify-content: center;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            text-decoration: none;
+            color: var(--color-white);
+            font-size: 25px;
+            border-color: var(--color-blue-primary37);
+            box-shadow: 0 0 40px 40px var(--color-blue-primary37) inset, 0 0 0 0 var(--color-blue-primary37);
+            transition: all 200ms ease-in-out;
+            width: 100%;
+        }
+            .projectCarrousel a:hover {
+                font-size: 25px;
+                box-shadow: 0 0 5px 0 var(--color-blue-primary37) inset, 0 0 10px 4px var(--color-blue-primary37);
+            }
+        .projectCarrouselItem .img {
+            display: flex;
+            justify-content: center;
+        }
+        .carrouselItemImg {
+            width: 800px;
+            height: 420px;
+            border: solid 2px var(--color-white);
+            border-radius: 7px;
+            margin: 15px 0px 15px 0px;
+        }
+
+        .portfolio .carrouselItemImg, .TicTacToe .carrouselItemImg, .ToDoList .carrouselItemImg, .ToolApp .carrouselItemImg, .Voice-Message .carrouselItemImg, .Compiler .carrouselItemImg, .Fight-1v1 .carrouselItemImg, .Pick-up-Coin .carrouselItemImg, .Paint .carrouselItemImg, .Allumette .carrouselItemImg {
+            width: 800px;
+            height: 420px;
+        }
+        .Connectico .carrouselItemImg {
+            width: 800px;
+            height: 490px;
+        }
+
+        .projectCarrouselItem h1 {
+            color: var(--color-white);
+        }
+        .projectCarrouselItem h2 {
+            font-size: 30px;
+            color: var(--color-white);
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        /* bouton gauche du carrousel */
+        #projectCarrouselLeftButton {
+            visibility: hidden;
+        }
+        /* bouton droit du carrousel */
+        #projectCarrouselRightButton {
+            visibility: visible;
+        }
+        #projectCarrouselLeftButton,
+        #projectCarrouselRightButton {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 120px;
+            cursor: pointer;
+            color: var(--color-white);
+        } 
+            #projectCarrouselLeftButton i,
+            #projectCarrouselRightButton i {
+                transition: all 0.50s;
+            }
+            #projectCarrouselLeftButton i:hover,
+            #projectCarrouselRightButton i:hover {
+                text-shadow: 0px 0px 20px var(--color-white);
+            }
+
+        .projectCarrouselItem .button {
+            display: flex;
+            gap: 10px;
+        }
+        .ProjectNumberPages {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 20px;
+        }
+        .ProjectNumberPages h1 {
+            font-size: 30px;
+        }
+
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .myProjectTitle h1 {
+        font-size: 60px;
+    }
+    .carrouselItemImg {
+        width: 600px;
+        height: 310px;
+    }
+    .portfolio .carrouselItemImg, .TicTacToe .carrouselItemImg, .ToDoList .carrouselItemImg, .ToolApp .carrouselItemImg, .Voice-Message .carrouselItemImg, .Compiler .carrouselItemImg, .Fight-1v1 .carrouselItemImg, .Pick-up-Coin .carrouselItemImg, .Paint .carrouselItemImg, .Allumette .carrouselItemImg {
+        width: 600px;
+        height: 310px;
+    }
+    .Connectico .carrouselItemImg {
+        width: 600px;
+        height: 380px;
+    }
+    #projectCarrouselLeftButton,
+    #projectCarrouselRightButton {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 990px) {
+    .projectCarrouselItem .languages {
+        width: 40px;
+    }
+    .projectCarrouselItem h1 {
+        font-size: 30px;
+    }
+    .projectCarrouselItem p {
+        font-size: 20px;
+    }
+    .projectCarrousel a {
+        font-size: 20px;
+    }
+    .carrouselItemImg {
+        width: 450px;
+        height: 240px;
+    }
+    .portfolio .carrouselItemImg, .TicTacToe .carrouselItemImg, .ToDoList .carrouselItemImg, .ToolApp .carrouselItemImg, .Voice-Message .carrouselItemImg, .Compiler .carrouselItemImg, .Fight-1v1 .carrouselItemImg, .Pick-up-Coin .carrouselItemImg, .Paint .carrouselItemImg, .Allumette .carrouselItemImg {
+        width: 450px;
+        height: 240px;
+    }
+    .Connectico .carrouselItemImg {
+        width: 450px;
+        height: 310px;
+    }
+    #projectCarrouselLeftButton,
+    #projectCarrouselRightButton {
+        font-size: 80px;
+    }
+    .ProjectNumberPages h1 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 760px) {
+    .projectCarrouselItem .languages {
+        width: 35px;
+    }
+    .projectCarrousel h1 {
+        font-size: 30px;
+    }
+    .projectCarrousel a {
+        font-size: 20px;
+    }
+    .carrouselItemImg {
+        width: 400px;
+        height: 215px;
+    }
+    .portfolio .carrouselItemImg, .TicTacToe .carrouselItemImg, .ToDoList .carrouselItemImg, .ToolApp .carrouselItemImg, .Voice-Message .carrouselItemImg, .Compiler .carrouselItemImg, .Fight-1v1 .carrouselItemImg, .Pick-up-Coin .carrouselItemImg, .Paint .carrouselItemImg, .Allumette .carrouselItemImg {
+        width: 400px;
+        height: 215px;
+    }
+    .Connectico .carrouselItemImg {
+        width: 400px;
+        height: 285px;
+    }
+    #projectCarrouselLeftButton,
+    #projectCarrouselRightButton {
+        font-size: 60px;
+    }
+    .ProjectNumberPages h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 530px) {
+    .myProjectTitle h1 {
+        font-size: 35px;
+    }
+    .projectCarrouselItem .languages {
+        width: 25px;
+    }
+    .projectCarrousel h1 {
+        font-size: 30px;
+    }
+    .projectCarrousel h2 {
+        font-size: 15px;
+    }
+    .projectCarrousel a {
+        font-size: 17px;
+    }
+    .carrouselItemImg {
+        width: 250px;
+        height: 130px;
+    }
+    .portfolio .carrouselItemImg, .TicTacToe .carrouselItemImg, .ToDoList .carrouselItemImg, .ToolApp .carrouselItemImg, .Voice-Message .carrouselItemImg, .Compiler .carrouselItemImg, .Fight-1v1 .carrouselItemImg, .Pick-up-Coin .carrouselItemImg, .Paint .carrouselItemImg, .Allumette .carrouselItemImg {
+        width: 250px;
+        height: 130px;
+    }
+    .Connectico .carrouselItemImg {
+        width: 250px;
+        height: 190px;
+    }
+    #projectCarrouselLeftButton,
+    #projectCarrouselRightButton {
+        font-size: 40px;
+    }
+    .projectCarrouselItem .button {
+        flex-direction: column;
+    }
+    .ProjectNumberPages h1 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 360px) {
+    .projectCarrousel h1 {
+        font-size: 20px;
+    }
+    .projectCarrouselItem .languages {
+        width: 20px;
+    }
+    .projectCarrouselItem p {
+        font-size: 10px;
+    }
+    .projectCarrousel a {
+        font-size: 13px;
+    }
+    .carrouselItemImg {
+        width: 150px;
+        height: 90px;
+    }
+    .portfolio .carrouselItemImg, .TicTacToe .carrouselItemImg, .ToDoList .carrouselItemImg, .ToolApp .carrouselItemImg, .Voice-Message .carrouselItemImg, .Compiler .carrouselItemImg, .Fight-1v1 .carrouselItemImg, .Pick-up-Coin .carrouselItemImg, .Paint .carrouselItemImg, .Allumette .carrouselItemImg {
+        width: 150px;
+        height: 90px;
+    }
+    .Connectico .carrouselItemImg {
+        width: 150px;
+        height: 140px;
+    }
+    #projectCarrouselLeftButton,
+    #projectCarrouselRightButton {
+        font-size: 25px; 
+    }
+    .ProjectNumberPages h1 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 260px) {
+    .myProjectTitle h1 {
+        font-size: 20px;
+    }
+    .projectCarrouselItem .languages {
+        width: 15px;
+    }
+}

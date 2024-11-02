@@ -1,0 +1,93 @@
+/* Popup */
+#popup-donate-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1100;
+    display: none;
+}
+    #popup-donate-overlay.open {
+        display: block;
+    }
+    .popup-donate-content {
+        background: linear-gradient(245.59deg, var(--color-green-primary41) 0%, var(--color-green-primary51) 28.53%, var(--color-green-primary71) 75.52%);
+        max-width: 600px;
+        width: 100%;
+        padding: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        border-radius: 8px;
+    }
+        .popup-donate-content img{
+            max-width: 70%;
+            display: flex;
+            justify-content: center;
+            border-radius: 8px;
+        }
+        .popup-donate-content h2 {  
+            color: var(--color-white);
+            display: flex;
+            justify-content: center;
+        }
+        .popup-donate-content .link-donate {  
+            color: var(--color-white);
+            background: var(--color-green-primary51);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            border-radius: 8px;
+        }
+        .popup-donate-content .popup-donate-exit {  
+            position: absolute;
+            background: var(--color-green-primary71);
+            padding: 10px;
+            color: var(--color-white);
+            border-radius: 0px 8px 0px 10px;
+            top: 0;
+            right: 0;
+        }
+
+
+
+
+
+/* Button */
+#donate {
+    position: fixed;
+    display: flex;
+    bottom: 4%;
+    left: 2%;
+    align-items: center;
+}
+    #donate h2 {
+        position: fixed;
+        display: block;
+        margin: 50px;
+        color: var(--color-white);
+        opacity: 0;
+    }
+        #donate:hover h2 {
+            opacity: 1;
+            transition: .70s;
+            transition-delay: .40s;
+        }
+    #donate i {
+        padding: 12px;
+        font-size: 25px;
+        color: var(--color-white);
+        background: var(--color-green);
+        border-radius: 30px;
+        transition: all .50s ease;
+    }
+        #donate:hover i {
+            padding-right: 114px;
+        }

@@ -1,0 +1,95 @@
+/* Page About Me */
+.aboutMe {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, var(--color-red-primary150) 0%, var(--color-red-primary155) 28.53%, var(--color-red-primary160) 75.52%);
+    position: relative;
+    gap: 2rem;   
+}
+    .aboutMeTitle h1 {
+        font-size: 70px;
+        line-height: 1;
+        color: var(--color-white);
+        margin: 10px 0 30px 0;
+        display: flex;
+        justify-content: center;
+    }
+        .aboutMeTitle span {
+            color: var(--color-white);
+            transition: all 0.40s;
+        }
+            .aboutMeTitle span:hover {
+                color: var(--color-red);
+            }
+
+    .aboutMeText {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .aboutMeText p {
+        font-size: 25px;
+        line-height: 1;
+        color: var(--color-white);
+        margin: 10px 0 10px 0;
+        text-align: center;
+        cursor: text;
+    }
+    .aboutMeText p::selection {
+        background-color: var(--color-red-primary70-selection);
+    }
+    .aboutMeImg {
+        display: flex;
+        justify-content: center;
+    }
+    .aboutMeImg img {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        height: 80%;
+        border-radius: 10px;
+    }
+
+
+
+
+/* Responsive */
+@media (max-width: 1200px) {
+    /* Page About Me */
+    .aboutMeTitle h1 {
+        font-size: 60px;
+    }
+    .aboutMeText p {
+        font-size: 20px;
+    }
+    .aboutMeImg img {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+@media (max-width: 530px) {
+    .aboutMeTitle h1 {
+        font-size: 35px;
+    }
+    .aboutMeText p {
+        font-size: 15px;
+    }
+    .aboutMeImg img {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@media (max-width: 260px) {
+    .aboutMeTitle h1 {
+        font-size: 20px;
+    }
+    .aboutMeText p {
+        font-size: 10px;
+    }
+} 
